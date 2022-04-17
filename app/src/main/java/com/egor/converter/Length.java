@@ -17,6 +17,9 @@ public class Length extends AppCompatActivity implements TextView.OnEditorAction
     private EditText inputNumber;
     private TextView tv1;
     private TextView tv2;
+    private TextView tv3;
+    private TextView tv4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,30 +34,55 @@ public class Length extends AppCompatActivity implements TextView.OnEditorAction
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
         tv1 = findViewById(R.id.tv1);
         tv2 = findViewById(R.id.tv2);
+        tv3 = findViewById(R.id.tv3);
+        tv4 = findViewById(R.id.tv4);
     }
 
     @Override
     public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-        if(i == EditorInfo.IME_ACTION_DONE) {
+        if (i == EditorInfo.IME_ACTION_DONE) {
             Spinner spinner = findViewById(R.id.spinner2);
             String text = spinner.getSelectedItem().toString();
             String input = inputNumber.getText().toString();
-            if(input.equals("")){
-                Toast.makeText(this, "Ошибка ввода", Toast.LENGTH_LONG).show();
-                return true;
-            }
-            if(text.equals("метр")){
-                Double number = Double.parseDouble(inputNumber.getText().toString());
-                tv1.setText(number.toString());
-                number *= 100;
-                tv2.setText(number.toString());
-            }
-            else {
-                Double number = Double.parseDouble(inputNumber.getText().toString());
-                tv2.setText(number.toString());
-                number /= 100;
-                tv1.setText(number.toString());
 
+            switch (text) {
+                case "Метр":
+                    Double number = Double.parseDouble(inputNumber.getText().toString());
+                    tv1.setText(number.toString());
+                    number *= 100;
+                    tv2.setText(number.toString());
+                    number /= 10;
+                    tv3.setText(number.toString());
+                    break;
+                case "Сантиметр":
+                    Double number2 = Double.parseDouble(inputNumber.getText().toString());
+                    tv2.setText(number2.toString());
+                    number2 /= 100;
+                    tv1.setText(number2.toString());
+                    number2 *= 10;
+                    tv3.setText(number2.toString());
+                    break;
+                case "Дециметр":
+                    Double number3 = Double.parseDouble(inputNumber.getText().toString());
+                    tv3.setText(number3.toString());
+                    number3 *= 10;
+                    tv2.setText(number3.toString());
+                    number3 /= 100;
+                    tv1.setText(number3.toString());
+                    break;
+                case "Мили":
+                    Double number4 = Double.parseDouble(inputNumber.getText().toString());
+                    tv4.setText(number4.toString());
+                    number4 *= 1609;
+                    tv1.setText(number4.toString());
+                    number4 *= 100;
+                    tv2.setText(number4.toString());
+                    number4 /= 10;
+                    tv3.setText(number4.toString());
+                    break;
+                default:
+                    Toast.makeText(this, "Ошибка ввода", Toast.LENGTH_LONG).show();
+                    return true;
             }
             return true;
         }

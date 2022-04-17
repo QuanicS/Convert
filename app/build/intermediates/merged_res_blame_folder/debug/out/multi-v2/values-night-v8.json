@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MobileLab-main\\Converter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\voros\\AndroidStudioProjects\\Converter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\MobileLab-main\\Converter\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\voros\\AndroidStudioProjects\\Converter\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

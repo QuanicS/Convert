@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MobileLab-main\\Converter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
+            "outputFile": "C:\\Users\\voros\\AndroidStudioProjects\\Converter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\voros\\.gradle\\caches\\transforms-3\\e28af2a57da205d1991628495b66e5fc\\transformed\\material-1.5.0\\res\\values-ne\\values-ne.xml",

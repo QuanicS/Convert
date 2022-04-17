@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MobileLab-main\\Converter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "outputFile": "C:\\Users\\voros\\AndroidStudioProjects\\Converter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\voros\\.gradle\\caches\\transforms-3\\f8d734a7d44310d84014d6ed621ec293\\transformed\\appcompat-1.4.1\\res\\values-sk\\values-sk.xml",

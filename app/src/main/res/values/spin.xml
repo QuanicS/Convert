@@ -13,8 +13,10 @@
         <item>K</item>
     </string-array>
     <string-array name="length">
-        <item>метр</item>
-        <item>сантиметр</item>
+        <item>Метр</item>
+        <item>Сантиметр</item>
+        <item>Дециметр</item>
+        <item>Мили</item>
     </string-array>
     <string-array name="area">
         <item>м2</item>
